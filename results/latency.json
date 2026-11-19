@@ -1,0 +1,28 @@
+{
+  "transport": "serial HTTP/1.1 loopback, keep-alive, one Uvicorn worker; explanation off",
+  "platform": "macOS-27.2.1-arm64-arm-64bit",
+  "python": "3.12.15",
+  "warmups": 20,
+  "distinct_test_contexts": 256,
+  "requests": 1024,
+  "parity_failures": 0,
+  "latency_ms": {
+    "p50": 0.9796875,
+    "p95": 2.542384899999997,
+    "p99": 3.7189326599999992
+  },
+  "rolling_drift_after_replaying_labelled_requests": {
+    "n": 512,
+    "status": "alert",
+    "psi": {
+      "inputs": 0.1402639447888134,
+      "depth": 0.5391351736420039,
+      "mean_parent_inputs": 0.16281046751178072,
+      "max_parent_inputs": 0.11047537950691062,
+      "mean_parent_depth": 0.6112933834723737,
+      "root_parent_fraction": 0.12097785264867553,
+      "recent_mean_inputs": 3.8559790563135223,
+      "inputs_minus_recent_mean": 2.2837576777586395
+    }
+  }
+}
